@@ -1,0 +1,367 @@
+:root {
+    --black: #222222;
+    --pink-bkg: #F1E4E6;
+    --grey-bkg: #F8F8F8;
+    --pink-text: #F1808F;
+    --white-text: #FBFBFB;
+    --grey-text:  #9F9F9F;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+body {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: var(--black);
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__button {
+    background-color: transparent;
+    border: 0;
+}
+.header__link {
+    margin: 0 0 0 33px;
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+}
+
+.header__menu {
+    display: none;
+}
+
+.brand {
+    display: flex;
+    margin: 0 0 63px;
+}
+
+.brand__title-wrp {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 92px;
+    background-color: var(--pink-bkg);
+    flex-grow: 1;
+}
+
+.brand__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.brand__sub-title {
+    display: block;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.brand__sub-title-pink {
+    color: var(--pink-text)
+}
+
+.sales {
+    margin-bottom:96px;
+}
+
+.sales__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sales__item {
+    width: 360px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sales__item_woman {
+    background-image: url('../img/sales-woman.jpg');
+}
+
+.sales__item_man {
+    background-image: url('../img/sales-man.jpg');
+}
+
+.sales__item_kids {
+    background-image: url('../img/sales-kid.jpg');
+}
+
+.sales__item_accesories {
+    background-image: url('../img/sales-accesories.jpg');
+    width: 1140px;
+    min-height: 180px;
+    margin-top: 30px;
+}
+
+.sales__item-text {
+    text-transform: uppercase;
+    color: var(--white-text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.sales__item-title {
+    text-transform: uppercase;
+    color: var(--pink-text);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 96px;
+}
+
+.products__title {
+    color: var(--black);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.products__text {
+    color: var(--grey-text);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: 6px;
+}
+
+.products__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+.products__item {
+    max-width: 360px;
+    margin-bottom: 30px;
+    background-color: var(--pink-bkg);
+}
+
+.products__wrap {
+    display: flex;
+    flex-direction: column;
+    padding-left: 18px;
+}
+
+.products__item-title {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 24px 0 0 0;
+}
+
+.products__item-description {
+    color: #5D5D5D;
+    max-width: 314px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+
+    margin: 13px 0 0 0;
+}
+
+.products__item-link {
+    color: var(--pink-text);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 18px 0 20px 0;
+}
+
+.products__button {
+    width: 211px;
+    height: 47px;
+    color: var(--pink-text);
+    border: 1px solid #FF6A6A;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.products__button:hover {
+    color: #FFF;
+    background-color: var(--pink-text);
+}
+
+.advantages {
+    background-color: var(--black);
+    min-height: 341px;
+    display: flex;
+}
+
+.advantages__wrap {
+    min-height: 341px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.advantages__item {
+    text-align: center;
+    max-width: 360px;
+}
+
+.advantages__item-title {
+    color: var(--white-text);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 28px 0 0 0;
+}
+
+.advantages__item-text {
+    color: var(--white-text);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    margin: 16px 0 0 0;
+}
+
+.subscribtion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../img/subscribtion-bg.jpg);
+    background-size: cover;
+    height: 448px;
+}
+
+.subscribtion__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review {
+    max-width: 360px;
+    text-align: center;
+}
+
+.review__text {
+    margin-top: 30px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.subscribtion__form {
+    text-align: center;
+}
+
+.subscribtion__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.subscribtion__sub-title {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.subscribtion__input {
+    margin: 32px 0 0 0;
+    border: none;
+    min-width: 256px;
+    min-height: 50px;
+    padding: 0 0 0 20px;
+    border-radius: 20px 0 0 20px;
+    background-color: #E1E1E1;
+}
+
+.subscribtion__input::placeholder {
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.subscribtion__button {
+    border: none;
+    min-width: 100px;
+    min-height: 50px;
+    border-radius: 0 20px 20px 0 ;
+    background-color: var(--pink-text);
+}
+
+.social {
+    min-height: 80px;
+    display: flex;
+    background-color: var(--black);
+}
+
+.social__wrap {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social__copyright {
+    color: var(--white-text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    }
+
+.social__list {
+    display: flex;
+}
+
+.social__item {
+    margin: 0 0 0 8px;
+}
