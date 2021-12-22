@@ -290,6 +290,15 @@ body {
     padding: 5px 13px;
 }
 
+.products__add-button:hover,
+.products__add-button:focus {
+    background: rgba(241, 128, 143, 0.2);
+}
+
+.products__add-button:active {
+    opacity: 0.7;
+}
+
 .products__add-link {
     margin: 0 0 0 10px;
     text-decoration: none;
@@ -573,9 +582,18 @@ body {
 .loyalty__last-name {
     min-height: 45px;
     margin: 0 0 20px 0;
-    border: 1px solid #A4A4A4;
+    outline: 1px solid #A4A4A4;
     padding: 0 0 0 16px;
+    border: none;
 }
+
+.loyalty__first-name:hover,
+.loyalty__first-name:focus,
+.loyalty__last-name:hover,
+.loyalty__last-name:focus {
+    outline: 2px solid var(--pink);
+}
+
 
 .loyalty__first-name::placeholder,
 .loyalty__last-name::placeholder {
@@ -595,9 +613,18 @@ body {
 .loyalty__password {
     min-height: 45px;
     margin: 0 0 20px 0;
-    border: 1px solid #A4A4A4;
+    outline: 1px solid #A4A4A4;
     padding: 0 0 0 16px;
+    border: none;
 }
+
+.loyalty__email:hover,
+.loyalty__email:focus,
+.loyalty__password:hover,
+.loyalty__password:focus {
+    outline: 2px solid var(--pink);
+}
+
 
 .loyalty__email::placeholder,
 .loyalty__password::placeholder {
