@@ -2,9 +2,10 @@
     --black: #222222;
     --pink-bkg: #F1E4E6;
     --grey-bkg: #F8F8F8;
-    --pink-text: #F1808F;
+    --pink: #F1808F;
     --white-text: #FBFBFB;
-    --grey-text:  #9F9F9F;
+    --grey-text: #9F9F9F;
+    --nav-svg: #E8E8E8;
 }
 
 .visually-hidden {
@@ -39,14 +40,58 @@ body {
 
 .header__logo {
     margin: 0 41px 0 0;
+    text-decoration: none;
+}
+
+.header__logo:active {
+    opacity: 0.3;
+}
+
+.header__search {
+    background: transparent;
+    fill: var(--nav-svg)
+}
+
+.header__search:hover,
+.header__search:focus {
+    cursor: pointer;
+    fill: var(--pink);
+}
+
+.header__search:active {
+    opacity: 0.3;
 }
 
 .header__button {
     background-color: transparent;
     border: 0;
+    fill: var(--nav-svg);
 }
+
+.header__button:focus,
+.header__button:hover {
+    cursor: pointer;
+    fill: var(--pink);
+}
+
+.header__button:active {
+    opacity: 0.3;
+}
+
 .header__link {
     margin: 0 0 0 33px;
+    fill: var(--nav-svg);
+    text-decoration: none;
+}
+
+.header__link:hover,
+.header__link:focus {
+    cursor: pointer;
+    fill: var(--pink);
+}
+
+.header__link:active {
+    opacity: 0.3;
 }
 
 .header__wrap {
@@ -57,7 +102,30 @@ body {
 }
 
 .header__menu {
+    background-color: #fff;
+    position: absolute;
     display: none;
+}
+
+.header__menu-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+.menu-sub-item__title {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--pink);
+}
+
+.menu-sub-item_item-link {
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+    color: #6F6E6E;
 }
 
 .brand {
@@ -79,6 +147,16 @@ body {
     line-height: 58px;
     color: var(--black);
     text-transform: uppercase;
+    position: relative;
+}
+
+.brand__title::before {
+    content: ' ';
+    width: 12px;
+    height: 100%;
+    background: var(--pink);
+    position: absolute;
+    left: -25px;
 }
 
 .brand__sub-title {
@@ -88,11 +166,11 @@ body {
 }
 
 .brand__sub-title-pink {
-    color: var(--pink-text)
+    color: var(--pink)
 }
 
 .sales {
-    margin-bottom:96px;
+    margin-bottom: 96px;
 }
 
 .sales__list {
@@ -108,6 +186,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.sales__item:hover,
+.sales__item:focus {
+    cursor: pointer;
 }
 
 .sales__item_woman {
@@ -139,7 +222,7 @@ body {
 
 .sales__item-title {
     text-transform: uppercase;
-    color: var(--pink-text);
+    color: var(--pink);
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
@@ -180,6 +263,60 @@ body {
     background-color: var(--pink-bkg);
 }
 
+.products__overlay {
+    position: relative;
+}
+
+.products__overlay:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+}
+
+.products__add-button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 13px;
+}
+
+.products__add-button:hover,
+.products__add-button:focus {
+    background: rgba(241, 128, 143, 0.2);
+}
+
+.products__add-button:active {
+    opacity: 0.7;
+}
+
+.products__add-link {
+    margin: 0 0 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white-text);
+}
+
+.products__overlay:before,
+.products__add-button {
+    display: none;
+}
+
+.products__item:hover .products__overlay:before,
+.products__item:hover .products__add-button {
+    display: flex;
+}
+
 .products__wrap {
     display: flex;
     flex-direction: column;
@@ -205,7 +342,7 @@ body {
 }
 
 .products__item-link {
-    color: var(--pink-text);
+    color: var(--pink);
     text-decoration: none;
     font-size: 16px;
     line-height: 19px;
@@ -215,17 +352,24 @@ body {
 .products__button {
     width: 211px;
     height: 47px;
-    color: var(--pink-text);
+    color: var(--pink);
     border: 1px solid #FF6A6A;
     background-color: transparent;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
+    margin: 10px 0 0 0;
 }
 
-.products__button:hover {
+.products__button:hover,
+.products__button:focus {
     color: #FFF;
-    background-color: var(--pink-text);
+    background-color: var(--pink);
+    cursor: pointer;
+}
+
+.products__button:active {
+    opacity: 0.6;
 }
 
 .advantages {
@@ -334,8 +478,19 @@ body {
     border: none;
     min-width: 100px;
     min-height: 50px;
-    border-radius: 0 20px 20px 0 ;
-    background-color: var(--pink-text);
+    border-radius: 0 20px 20px 0;
+    background-color: var(--pink);
+    color: #FFFFFF;
+}
+
+.subscribtion__button:hover,
+.subscribtion__button:active {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.subscribtion__button:active {
+    opacity: 0.7;
 }
 
 .social {
@@ -356,7 +511,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
-    }
+}
 
 .social__list {
     display: flex;
@@ -364,4 +519,223 @@ body {
 
 .social__item {
     margin: 0 0 0 8px;
+}
+
+.social__icon {
+    fill: #000000;
+}
+
+.social__bg {
+    fill: var(--white-text);
+}
+
+.social__item:hover .social__bg,
+.social__item:focus .social__bg {
+    fill: var(--pink);
+}
+
+.social__item:hover .social__icon,
+.social__item:focus .social__icon {
+    fill: var(--white-text);
+}
+
+.breadcrumb {
+    min-height: 148px;
+    background: #E5E5E5;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--pink);
+}
+
+.loyalty {
+    display: flex;
+    justify-content: space-between;
+    min-height: 675px;
+    padding: 64px 0 0 0;
+}
+
+.loyalty__form {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.loyalty__legend {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    margin: 0 0 20px 0;
+}
+
+.loyalty__user {
+    display: flex;
+    flex-direction: column;
+}
+
+.loyalty__first-name,
+.loyalty__last-name {
+    min-height: 45px;
+    margin: 0 0 20px 0;
+    outline: 1px solid #A4A4A4;
+    padding: 0 0 0 16px;
+    border: none;
+}
+
+.loyalty__first-name:hover,
+.loyalty__first-name:focus,
+.loyalty__last-name:hover,
+.loyalty__last-name:focus {
+    outline: 2px solid var(--pink);
+}
+
+
+.loyalty__first-name::placeholder,
+.loyalty__last-name::placeholder {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.loyalty__login {
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0 0 0;
+}
+
+.loyalty__email,
+.loyalty__password {
+    min-height: 45px;
+    margin: 0 0 20px 0;
+    outline: 1px solid #A4A4A4;
+    padding: 0 0 0 16px;
+    border: none;
+}
+
+.loyalty__email:hover,
+.loyalty__email:focus,
+.loyalty__password:hover,
+.loyalty__password:focus {
+    outline: 2px solid var(--pink);
+}
+
+
+.loyalty__email::placeholder,
+.loyalty__password::placeholder {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #B1B1B1;
+}
+
+.loyalty__password-recomendation {
+    color: #B1B1B1;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    margin: 0 0 40px 0;
+}
+
+.loyalty__male,
+.loyalty__female {
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 13px;
+    margin: 0 0 0 30px;
+    position: relative;
+}
+
+.loyalty__female {
+    margin: 0 0 0 50px;
+}
+
+.loualty__gender-choice {
+    display: none;
+}
+
+.loyalty__male::before,
+.loyalty__female::before {
+    cursor: pointer;
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;
+    border: 1px solid #A4A4A4;
+    border-radius: 50%;
+    left: -30px;
+}
+
+.loualty__gender-choice:checked+.loyalty__male::before,
+.loualty__gender-choice:checked+.loyalty__female::before {
+    border-color: var(--pink);
+    background-color: var(--pink);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.loyalty__button {
+    cursor: pointer;
+    width: 167px;
+    height: 50px;
+    text-transform: uppercase;
+    border: none;
+    color: #FFFFFF;
+    fill: #FFFFFF;
+    background: var(--pink);
+}
+
+.loyalty__button:hover,
+.loyalty__button:focus {
+    background-color: transparent;
+    border: 1px solid var(--pink);
+    color: var(--pink);
+    fill: var(--pink);
+}
+
+.loyalty__arrow {
+    margin: 0 0 0 20px;
+}
+
+.loyalty__perks {
+    max-width: 650px;
+}
+
+.loyalty__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    margin: 0 0 22px 0;
+}
+
+.loyalty__description {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    margin: 0 0 20px 0;
+}
+
+.loyalty__item {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    margin: 0 0 16px 27px;
+    position: relative;
+}
+
+.loyalty__item::before {
+    content: '';
+    width: 16px;
+    height: 20px;
+    position: absolute;
+    top: 7px;
+    left: -25px;
+    background-image: url(../img/check-mark.svg);
+    background-size: 16px 20px;
 }
