@@ -1,0 +1,194 @@
+.loyalty {
+    display: flex;
+    justify-content: space-between;
+    min-height: 675px;
+    padding: 64px 0 0 0;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+    }
+
+    &__legend {
+        // font-size: 16px;
+        // font-weight: 300;
+        // line-height: 19px;
+        @include font(16px, 19px, 300);
+        margin: 0 0 20px 0;
+    }
+
+    &__user {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__first-name,
+    &__last-name {
+        min-height: 45px;
+        margin: 0 0 20px 0;
+        outline: 1px solid #A4A4A4;
+        padding: 0 0 0 16px;
+        border: none;
+    }
+
+    &__first-name:hover,
+    &__first-name:focus,
+    &__last-name:hover,
+    &__last-name:focus {
+        outline: 2px solid $pink;
+    }
+
+
+    &__first-name::placeholder,
+    &__last-name::placeholder {
+        // font-size: 13px;
+        // font-weight: 300;
+        // line-height: 16px;
+        @include font(13px, 16px, 300);
+        color: #B1B1B1;
+    }
+
+    &__login {
+        display: flex;
+        flex-direction: column;
+        margin: 35px 0 0 0;
+    }
+
+    &__email,
+    &__password {
+        min-height: 45px;
+        margin: 0 0 20px 0;
+        outline: 1px solid #A4A4A4;
+        padding: 0 0 0 16px;
+        border: none;
+    }
+
+    &__email:hover,
+    &__email:focus,
+    &__password:hover,
+    &__password:focus {
+        outline: 2px solid $pink;
+    }
+
+
+    &__email::placeholder,
+    &__password::placeholder {
+        // font-size: 13px;
+        // font-weight: 300;
+        // line-height: 16px;
+        @include font(13px, 16px, 300);
+        color: #B1B1B1;
+    }
+
+    &__password-recomendation {
+        color: #B1B1B1;
+        // font-size: 13px;
+        // font-weight: 300;
+        // line-height: 16px;
+        @include font(13px, 16px, 300);
+        margin: 0 0 40px 0;
+    }
+
+    &__male,
+    &__female {
+        cursor: pointer;
+        // font-size: 13px;
+        // font-weight: 300;
+        // line-height: 13px;
+        margin: 0 0 0 30px;
+        @include font(13px, 13px, 300);
+        position: relative;
+    }
+
+    &__female {
+        margin: 0 0 0 50px;
+    }
+
+    &__gender-choice {
+        display: none;
+    }
+
+    &__male::before,
+    &__female::before {
+        cursor: pointer;
+        position: absolute;
+        content: '';
+        width: 17px;
+        height: 17px;
+        border: 1px solid #A4A4A4;
+        border-radius: 50%;
+        left: -30px;
+    }
+
+    &__gender-choice:checked+&__male::before,
+    &__gender-choice:checked+&__female::before {
+        border-color: $pink;
+        background-color: $pink;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+    }
+
+    &__button {
+        cursor: pointer;
+        width: 167px;
+        height: 50px;
+        text-transform: uppercase;
+        border: none;
+        color: #FFFFFF;
+        fill: #FFFFFF;
+        background: $pink;
+    }
+
+    &__button:hover,
+    &__button:focus {
+        background-color: transparent;
+        border: 1px solid $pink;
+        color: $pink;
+        fill: $pink;
+    }
+
+    &__arrow {
+        margin: 0 0 0 20px;
+    }
+
+    &__perks {
+        max-width: 650px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        // font-size: 24px;
+        // font-weight: 300;
+        // line-height: 29px;
+        @include font(24px, 29px, 300);
+        margin: 0 0 22px 0;
+    }
+
+    &__description {
+        // font-size: 24px;
+        // font-weight: 300;
+        // line-height: 29px;
+        @include font(24px, 29px, 300);
+        margin: 0 0 20px 0;
+    }
+
+    &__item {
+        // font-size: 24px;
+        // font-weight: 300;
+        // line-height: 29px;
+        @include font(24px, 29px, 300);
+        margin: 0 0 16px 27px;
+        position: relative;
+    }
+
+    &__item::before {
+        content: '';
+        width: 16px;
+        height: 20px;
+        position: absolute;
+        top: 7px;
+        left: -25px;
+        background-image: url(../../img/check-mark.svg);
+        background-size: 16px 20px;
+    }
+}
