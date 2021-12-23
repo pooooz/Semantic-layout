@@ -45,6 +45,16 @@
         background-color: #E1E1E1;
     }
 
+    &__input:hover,
+    &__input:focus {
+        outline: 1px solid $pink;
+    }
+
+    &__input:hover+&__button,
+    &__input:focus+&__button {
+        outline: 1px solid $pink;
+    }
+
     &__input::placeholder {
         color: $black;
         @include font(14px, 17px);
