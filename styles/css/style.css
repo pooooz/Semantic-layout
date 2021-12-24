@@ -860,7 +860,7 @@ body {
           flex-direction: column;
 }
 
-.loyalty__first-name, .loyalty__last-name {
+.loyalty__text-input {
   min-height: 45px;
   margin: 0 0 20px 0;
   outline: 1px solid #A4A4A4;
@@ -868,11 +868,11 @@ body {
   border: none;
 }
 
-.loyalty__first-name:hover, .loyalty__first-name:focus, .loyalty__last-name:hover, .loyalty__last-name:focus {
+.loyalty__text-input:hover, .loyalty__text-input:focus {
   outline: 2px solid #F1808F;
 }
 
-.loyalty__first-name::-webkit-input-placeholder, .loyalty__last-name::-webkit-input-placeholder {
+.loyalty__text-input::-webkit-input-placeholder {
   font-size: 13px;
   line-height: 16px;
   font-weight: 300;
@@ -880,7 +880,7 @@ body {
   color: #B1B1B1;
 }
 
-.loyalty__first-name:-ms-input-placeholder, .loyalty__last-name:-ms-input-placeholder {
+.loyalty__text-input:-ms-input-placeholder {
   font-size: 13px;
   line-height: 16px;
   font-weight: 300;
@@ -888,7 +888,7 @@ body {
   color: #B1B1B1;
 }
 
-.loyalty__first-name::-ms-input-placeholder, .loyalty__last-name::-ms-input-placeholder {
+.loyalty__text-input::-ms-input-placeholder {
   font-size: 13px;
   line-height: 16px;
   font-weight: 300;
@@ -896,7 +896,7 @@ body {
   color: #B1B1B1;
 }
 
-.loyalty__first-name::placeholder, .loyalty__last-name::placeholder {
+.loyalty__text-input::placeholder {
   font-size: 13px;
   line-height: 16px;
   font-weight: 300;
@@ -913,50 +913,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 35px 0 0 0;
-}
-
-.loyalty__email, .loyalty__password {
-  min-height: 45px;
-  margin: 0 0 20px 0;
-  outline: 1px solid #A4A4A4;
-  padding: 0 0 0 16px;
-  border: none;
-}
-
-.loyalty__email:hover, .loyalty__email:focus, .loyalty__password:hover, .loyalty__password:focus {
-  outline: 2px solid #F1808F;
-}
-
-.loyalty__email::-webkit-input-placeholder, .loyalty__password::-webkit-input-placeholder {
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: 300;
-  font-style: normal;
-  color: #B1B1B1;
-}
-
-.loyalty__email:-ms-input-placeholder, .loyalty__password:-ms-input-placeholder {
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: 300;
-  font-style: normal;
-  color: #B1B1B1;
-}
-
-.loyalty__email::-ms-input-placeholder, .loyalty__password::-ms-input-placeholder {
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: 300;
-  font-style: normal;
-  color: #B1B1B1;
-}
-
-.loyalty__email::placeholder, .loyalty__password::placeholder {
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: 300;
-  font-style: normal;
-  color: #B1B1B1;
 }
 
 .loyalty__password-recomendation {

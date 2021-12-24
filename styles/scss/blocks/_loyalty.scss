@@ -11,9 +11,6 @@
     }
 
     &__legend {
-        // font-size: 16px;
-        // font-weight: 300;
-        // line-height: 19px;
         @include font(16px, 19px, 300);
         margin: 0 0 20px 0;
     }
@@ -23,8 +20,7 @@
         flex-direction: column;
     }
 
-    &__first-name,
-    &__last-name {
+    &__text-input {
         min-height: 45px;
         margin: 0 0 20px 0;
         outline: 1px solid #A4A4A4;
@@ -32,19 +28,13 @@
         border: none;
     }
 
-    &__first-name:hover,
-    &__first-name:focus,
-    &__last-name:hover,
-    &__last-name:focus {
+    &__text-input:hover,
+    &__text-input:focus {
         outline: 2px solid $pink;
     }
 
 
-    &__first-name::placeholder,
-    &__last-name::placeholder {
-        // font-size: 13px;
-        // font-weight: 300;
-        // line-height: 16px;
+    &__text-input::placeholder {
         @include font(13px, 16px, 300);
         color: #B1B1B1;
     }
@@ -55,37 +45,8 @@
         margin: 35px 0 0 0;
     }
 
-    &__email,
-    &__password {
-        min-height: 45px;
-        margin: 0 0 20px 0;
-        outline: 1px solid #A4A4A4;
-        padding: 0 0 0 16px;
-        border: none;
-    }
-
-    &__email:hover,
-    &__email:focus,
-    &__password:hover,
-    &__password:focus {
-        outline: 2px solid $pink;
-    }
-
-
-    &__email::placeholder,
-    &__password::placeholder {
-        // font-size: 13px;
-        // font-weight: 300;
-        // line-height: 16px;
-        @include font(13px, 16px, 300);
-        color: #B1B1B1;
-    }
-
     &__password-recomendation {
         color: #B1B1B1;
-        // font-size: 13px;
-        // font-weight: 300;
-        // line-height: 16px;
         @include font(13px, 16px, 300);
         margin: 0 0 40px 0;
     }
@@ -93,9 +54,6 @@
     &__male,
     &__female {
         cursor: pointer;
-        // font-size: 13px;
-        // font-weight: 300;
-        // line-height: 13px;
         margin: 0 0 0 30px;
         @include font(13px, 13px, 300);
         position: relative;
@@ -157,25 +115,16 @@
 
     &__title {
         text-transform: uppercase;
-        // font-size: 24px;
-        // font-weight: 300;
-        // line-height: 29px;
         @include font(24px, 29px, 300);
         margin: 0 0 22px 0;
     }
 
     &__description {
-        // font-size: 24px;
-        // font-weight: 300;
-        // line-height: 29px;
         @include font(24px, 29px, 300);
         margin: 0 0 20px 0;
     }
 
     &__item {
-        // font-size: 24px;
-        // font-weight: 300;
-        // line-height: 29px;
         @include font(24px, 29px, 300);
         margin: 0 0 16px 27px;
         position: relative;
