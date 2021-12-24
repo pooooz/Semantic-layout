@@ -1,0 +1,81 @@
+.subscribtion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../../img/subscribtion-bg.jpg);
+    background-size: cover;
+    height: 448px;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__review {
+        max-width: 360px;
+        text-align: center;
+    }
+
+    &__review-text {
+        margin-top: 30px;
+        @include font(20px, 24px, 400, italic);
+    }
+
+    &__form {
+        text-align: center;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        @include font(24px, 40px, 700);
+    }
+
+    &__sub-title {
+        text-transform: uppercase;
+        @include font(18px, 30px);
+    }
+
+    &__input {
+        margin: 32px 0 0 0;
+        border: none;
+        min-width: 256px;
+        min-height: 50px;
+        padding: 0 0 0 20px;
+        border-radius: 20px 0 0 20px;
+        background-color: #E1E1E1;
+    }
+
+    &__input:hover,
+    &__input:focus {
+        outline: 1px solid $pink;
+    }
+
+    &__input:hover+&__button,
+    &__input:focus+&__button {
+        outline: 1px solid $pink;
+    }
+
+    &__input::placeholder {
+        color: $black;
+        @include font(14px, 17px);
+    }
+
+    &__button {
+        border: none;
+        min-width: 100px;
+        min-height: 50px;
+        border-radius: 0 20px 20px 0;
+        background-color: $pink;
+        color: #FFFFFF;
+    }
+
+    &__button:hover,
+    &__button:active {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    &__button:active {
+        opacity: 0.7;
+    }
+}

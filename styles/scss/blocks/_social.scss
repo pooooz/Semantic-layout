@@ -1,0 +1,43 @@
+.social {
+    min-height: 80px;
+    display: flex;
+    background-color: $black;
+
+    &__wrap {
+        min-height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__copyright {
+        color: $white-text;
+        @include font(16px, 19px)
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin: 0 0 0 8px;
+    }
+
+    &__icon {
+        fill: #000000;
+    }
+
+    &__bg {
+        fill: $white-text;
+    }
+
+    &__item:hover &__bg,
+    &__item:focus &__bg {
+        fill: $pink;
+    }
+
+    &__item:hover &__icon,
+    &__item:focus &__icon {
+        fill: $white-text;
+    }
+}
