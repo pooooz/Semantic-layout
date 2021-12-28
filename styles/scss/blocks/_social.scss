@@ -40,4 +40,20 @@
     &__item:focus &__icon {
         fill: $white-text;
     }
+
+    @media (max-width: $mobile-width) {
+        & {
+            min-height: 145px;
+        }
+
+        &__wrap {
+            min-height: 145px;
+            flex-direction: column-reverse;
+            justify-content: space-around;
+        }
+
+        &__list {
+            margin: 30px 0 0 0;
+        }
+    }
 }
