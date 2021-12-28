@@ -933,10 +933,10 @@ body {
     margin: 60px 0 0 0;
   }
   .subscribtion__input {
-    min-width: 230px;
+    min-width: 200px;
   }
   .subscribtion__button {
-    min-width: 90px;
+    min-width: 70px;
   }
 }
 
