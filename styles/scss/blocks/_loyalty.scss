@@ -140,4 +140,42 @@
         background-image: url(../../img/check-mark.svg);
         background-size: 16px 20px;
     }
+
+    @media (max-width: $tablet-width) {
+        &__perks {
+            max-width: 354px;
+        }
+
+        &__title {
+            @include font(16px, 19px, 300);
+        }
+
+        &__description {
+            @include font(16px, 19px, 300);
+        }
+
+        &__item {
+            @include font(16px, 19px, 300);
+        }
+
+        &__item::before {
+            position: absolute;
+            top: 2px;
+            left: -25px;
+        }
+    }
+
+    @media (max-width: $mobile-width) {
+        & {
+            flex-direction: column;
+        }
+
+        &__form {
+            width: 340px;
+        }
+
+        &__perks {
+            margin: 40px 0 100px 0;
+        }
+    }
 }

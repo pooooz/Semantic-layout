@@ -1035,6 +1035,12 @@ body {
   color: #F1808F;
 }
 
+@media (max-width: 767px) {
+  .breadcrumb__title {
+    text-align: center;
+  }
+}
+
 .loyalty {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1236,6 +1242,50 @@ body {
   left: -25px;
   background-image: url(../../img/check-mark.svg);
   background-size: 16px 20px;
+}
+
+@media (max-width: 1599px) {
+  .loyalty__perks {
+    max-width: 354px;
+  }
+  .loyalty__title {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .loyalty__description {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .loyalty__item {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .loyalty__item::before {
+    position: absolute;
+    top: 2px;
+    left: -25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .loyalty {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .loyalty__form {
+    width: 340px;
+  }
+  .loyalty__perks {
+    margin: 40px 0 100px 0;
+  }
 }
 
 .shopping {
