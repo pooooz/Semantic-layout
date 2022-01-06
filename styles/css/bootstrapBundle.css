@@ -42,6 +42,7 @@ body {
 
 .nav-link {
     fill: #E8E8E8;
+    transition: fill 900ms;
 }
 
 .nav-link:hover,
@@ -49,8 +50,13 @@ body {
     fill: #F1808F;
 }
 
+.nav-link:active {
+    opacity: 0.3;
+}
+
 .navbar-toggler-icon {
     fill: #E8E8E8;
+    transition: fill 700ms;
 }
 
 .navbar-toggler-icon:hover,
@@ -101,6 +107,7 @@ body {
 
 .carousel-control-svg {
     fill: black;
+    transition: fill 700ms;
 }
 
 .carousel-control-next-icon:hover>.carousel-control-svg,
@@ -184,11 +191,12 @@ body {
     line-height: 17px;
     color: #6F6E6E;
     text-decoration: none;
+    transition: color 700ms;
 }
 
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
-    color: #F16D7F;
+    color: #F1808F;
 }
 
 .button-icon {
@@ -196,6 +204,7 @@ body {
     height: 24px;
     fill: #F16D7F;
     margin: 0 20px 0 0;
+    transition: fill 700ms;
 }
 
 .add-button {
@@ -208,12 +217,13 @@ body {
     color: #FF6A6A;
     background: transparent;
     border: none;
-    outline: 1px solid #FF6A6A;
+    outline: 1px solid #F1808F;
+    transition: background-color 700ms, color 700ms, outline 700ms;
 }
 
 .add-button:hover,
 .add-button:focus {
-    background: #FF6A6A;
+    background: #F1808F;
     color: white;
     outline: 1px solid #ee4a4a;
 }
@@ -232,6 +242,65 @@ body {
     border-radius: 0;
     padding: 0;
     background: #F8F8F8;
+}
+
+.card-overlay {
+    position: relative;
+}
+
+.card-overlay:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+}
+
+.card-add-button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 13px;
+    transition: background-color 700ms;
+}
+
+.card-add-button:hover,
+.card-add-button:focus {
+    background: rgba(241, 128, 143, 0.2);
+}
+
+.card-add-button:active {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-add-link {
+    margin: 0 0 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+}
+
+.card-add-link:hover {
+    color: white;
+}
+
+.card-overlay:before,
+.card-add-button {
+    display: none;
+}
+
+.card:hover .card-overlay:before,
+.card:hover .card-add-button {
+    display: flex;
 }
 
 .card-title {
@@ -311,18 +380,17 @@ body {
     padding: 0 0 0 20px;
     border-radius: 20px 0 0 20px;
     background-color: #E1E1E1;
+    transition: outline 700ms;
 }
 
 .subscribtion__input:hover,
 .subscribtion__input:focus {
-    outline: 1px solid #FF6A6A;
-    ;
+    outline: 1px solid #F1808F;
 }
 
 .subscribtion__input:hover+.subscribtion__button,
 .subscribtion__input:focus+.subscribtion__button {
     outline: 1px solid #FF6A6A;
-    ;
 }
 
 .subscribtion__input::placeholder {
@@ -336,7 +404,7 @@ body {
     min-width: 100px;
     min-height: 50px;
     border-radius: 0 20px 20px 0;
-    background-color: #FF6A6A;
+    background-color: #F1808F;
     ;
     color: #FFFFFF;
 }
@@ -348,7 +416,7 @@ body {
 }
 
 .subscribtion__button:active {
-    opacity: 0.7;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .social {
@@ -384,15 +452,17 @@ body {
 
 .social__icon {
     fill: #000000;
+    transition: fill 700ms;
 }
 
 .social__bg {
     fill: #FBFBFB;
+    transition: fill 700ms;
 }
 
 .social__item:hover .social__bg,
 .social__item:focus .social__bg {
-    fill: #FF6A6A;
+    fill: #F1808F;
 }
 
 .social__item:hover .social__icon,
@@ -460,6 +530,14 @@ body {
 
     .card-group {
         margin: 64px 0 0 0;
+    }
+
+    .card {
+        margin: 10px 0 0 0;
+    }
+
+    #card-3 {
+        display: flex;
     }
 
     .dropdown-field {
