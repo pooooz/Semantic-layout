@@ -51,6 +51,7 @@
         border: 1px solid white;
         @include flex-center;
         padding: 5px 13px;
+        transition: background-color 700ms;
     }
 
     &__add-button:hover,
@@ -59,7 +60,7 @@
     }
 
     &__add-button:active {
-        opacity: 0.7;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     }
 
     &__add-link {
@@ -113,6 +114,7 @@
         background-color: transparent;
         @include font(16px, 19px);
         margin: 10px 0 0 0;
+        transition: color 700ms, background-color 700ms;
     }
 
     &__button:hover,
@@ -123,7 +125,8 @@
     }
 
     &__button:active {
-        opacity: 0.6;
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     }
 
     @media (max-width: $tablet-width) {

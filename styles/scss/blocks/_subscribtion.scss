@@ -43,6 +43,7 @@
         padding: 0 0 0 20px;
         border-radius: 20px 0 0 20px;
         background-color: #E1E1E1;
+        transition: outline 700ms;
     }
 
     &__input:hover,
@@ -67,6 +68,7 @@
         border-radius: 0 20px 20px 0;
         background-color: $pink;
         color: #FFFFFF;
+        transition: outline 700ms;
     }
 
     &__button:hover,
@@ -76,7 +78,7 @@
     }
 
     &__button:active {
-        opacity: 0.7;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     }
 
     @media (max-width: $tablet-width) {

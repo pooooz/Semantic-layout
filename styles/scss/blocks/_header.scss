@@ -13,7 +13,8 @@
 
     &__search {
         background: transparent;
-        fill: $nav-svg
+        fill: $nav-svg;
+        transition: fill 700ms;
     }
 
     &__search:hover,
@@ -30,6 +31,7 @@
         background-color: transparent;
         border: 0;
         fill: $nav-svg;
+        transition: fill 700ms;
     }
 
     &__button:focus,
@@ -46,6 +48,7 @@
         margin: 0 0 0 33px;
         fill: $nav-svg;
         text-decoration: none;
+        transition: fill 700ms;
     }
 
     &__link:hover,

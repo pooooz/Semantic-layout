@@ -25,10 +25,12 @@
 
     &__icon {
         fill: #000000;
+        transition: fill 700ms;
     }
 
     &__bg {
         fill: $white-text;
+        transition: fill 700ms;
     }
 
     &__item:hover &__bg,
@@ -39,6 +41,10 @@
     &__item:hover &__icon,
     &__item:focus &__icon {
         fill: $white-text;
+    }
+
+    &__item:active {
+        box-shadow: 0 5px 10px rgba(245, 240, 240, 0.2);
     }
 
     @media (max-width: $mobile-width) {
