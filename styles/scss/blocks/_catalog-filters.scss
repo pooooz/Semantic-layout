@@ -12,6 +12,10 @@
 }
 
 .catalog-filters {
+    &__header {
+        display: none;
+    }
+
     &__wrap {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

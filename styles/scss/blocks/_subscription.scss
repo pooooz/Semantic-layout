@@ -1,8 +1,8 @@
-.subscribtion {
+.subscription {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url(../../img/subscribtion-bg.jpg);
+    background-image: url(../../img/subscription-bg.jpg);
     background-size: cover;
     height: 448px;
 
@@ -14,6 +14,10 @@
     &__review {
         max-width: 360px;
         text-align: center;
+    }
+
+    &__review-title {
+        display: none;
     }
 
     &__review-text {
