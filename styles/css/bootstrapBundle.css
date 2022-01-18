@@ -327,27 +327,27 @@ body {
     color: #F16D7F;
 }
 
-.subscribtion {
+.subscription {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: url(../../img/subscribtion-bg.jpg);
+    background-image: url(../../img/subscription-bg.jpg);
     background-size: cover;
     height: 448px;
     margin: 128px 0 0 0;
 }
 
-.subscribtion__wrap {
+.subscription__wrap {
     display: flex;
     justify-content: space-between;
 }
 
-.subscribtion__review {
+.subscription__review {
     max-width: 360px;
     text-align: center;
 }
 
-.subscribtion__review-text {
+.subscription__review-text {
     margin-top: 30px;
     font-size: 20px;
     line-height: 24px;
@@ -355,24 +355,24 @@ body {
     font-style: italic;
 }
 
-.subscribtion__form {
+.subscription__form {
     text-align: center;
 }
 
-.subscribtion__title {
+.subscription__title {
     text-transform: uppercase;
     font-size: 24px;
     line-height: 40px;
     font-weight: 700;
 }
 
-.subscribtion__sub-title {
+.subscription__sub-title {
     text-transform: uppercase;
     font-size: 18px;
     line-height: 30px;
 }
 
-.subscribtion__input {
+.subscription__input {
     margin: 32px 0 0 0;
     border: none;
     min-width: 256px;
@@ -383,23 +383,23 @@ body {
     transition: outline 700ms;
 }
 
-.subscribtion__input:hover,
-.subscribtion__input:focus {
+.subscription__input:hover,
+.subscription__input:focus {
     outline: 1px solid #F1808F;
 }
 
-.subscribtion__input:hover+.subscribtion__button,
-.subscribtion__input:focus+.subscribtion__button {
+.subscription__input:hover+.subscription__button,
+.subscription__input:focus+.subscription__button {
     outline: 1px solid #FF6A6A;
 }
 
-.subscribtion__input::placeholder {
+.subscription__input::placeholder {
     color: #222222;
     font-size: 14px;
     line-height: 17px;
 }
 
-.subscribtion__button {
+.subscription__button {
     border: none;
     min-width: 100px;
     min-height: 50px;
@@ -409,13 +409,13 @@ body {
     color: #FFFFFF;
 }
 
-.subscribtion__button:hover,
-.subscribtion__button:active {
+.subscription__button:hover,
+.subscription__button:active {
     opacity: 0.8;
     cursor: pointer;
 }
 
-.subscribtion__button:active {
+.subscription__button:active {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -481,34 +481,34 @@ body {
         display: none;
     }
 
-    .subscribtion {
+    .subscription {
         height: 614px;
     }
 
-    .subscribtion__wrap {
+    .subscription__wrap {
         flex-direction: column;
     }
 
-    .subscribtion__review {
+    .subscription__review {
         align-self: center;
     }
 
-    .subscribtion__form {
+    .subscription__form {
         margin: 40px 0 0 0;
     }
 
-    .subscribtion__title {
+    .subscription__title {
         font-size: 24px;
         line-height: 36px;
         font-weight: 700;
     }
 
-    .subscribtion__sub-title {
+    .subscription__sub-title {
         font-size: 18px;
         line-height: 27px;
     }
 
-    .subscribtion__input {
+    .subscription__input {
         margin: 27px 0 0 0;
     }
 }
@@ -549,26 +549,26 @@ body {
         line-height: 12px;
     }
 
-    .subscribtion__title {
+    .subscription__title {
         font-size: 24px;
         line-height: 36px;
         font-weight: 700;
     }
 
-    .subscribtion__sub-title {
+    .subscription__sub-title {
         font-size: 14px;
         line-height: 21px;
     }
 
-    .subscribtion__form {
+    .subscription__form {
         margin: 60px 0 0 0;
     }
 
-    .subscribtion__input {
+    .subscription__input {
         min-width: 200px;
     }
 
-    .subscribtion__button {
+    .subscription__button {
         min-width: 70px;
     }
 
