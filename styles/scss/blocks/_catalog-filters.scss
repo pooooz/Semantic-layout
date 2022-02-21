@@ -29,6 +29,7 @@
     }
 
     &__menu-item {
+        cursor: pointer;
         display: block;
         text-transform: uppercase;
         @include font(14px, 40px, 400);
@@ -36,6 +37,7 @@
         margin: 9px 0 9px 16px;
         position: relative;
         transition: color 600ms;
+        user-select: none;
     }
 
     &__menu-item-active {
