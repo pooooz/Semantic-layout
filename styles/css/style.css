@@ -1888,6 +1888,7 @@ a {
 }
 
 .catalog-filters__menu-item {
+  cursor: pointer;
   display: block;
   text-transform: uppercase;
   font-size: 14px;
@@ -1899,6 +1900,10 @@ a {
   position: relative;
   -webkit-transition: color 600ms;
   transition: color 600ms;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .catalog-filters__menu-item-active {
