@@ -1,7 +1,5 @@
 "use strict"
 
-const filtersButton = document.querySelector(".catalog-filters__title-wrap");
-const filtersMenu = document.querySelector(".catalog-filters__filter-menu");
 const menuItems = document.querySelectorAll(".catalog-filters__menu-item");
 
 menuItems.forEach((element) => {
@@ -10,4 +8,3 @@ menuItems.forEach((element) => {
     event.target.nextElementSibling.classList.toggle("visually-hidden");
   });
 });
-
